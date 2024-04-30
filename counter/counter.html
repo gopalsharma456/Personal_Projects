@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        font-size: 150px;
+      }
+      #container {
+        width: 50%;
+        margin: auto;
+      }
+
+      button {
+        width: 48%;
+        margin: 50% auto;
+        padding: 20px 40px;
+        font-size: 50px;
+        font-weight: bolder;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>0</h1>
+    <div id="container">
+      <button onclick="increment()">Increment</button>
+      <button onclick="decrement()">Decrement</button>
+    </div>
+
+    <script>
+      let count = 0;
+      function increment() {
+        count += 1;
+        document.getElementsByTagName('h1')[0].innerText = count
+      }
+      function decrement() {
+        count -= 1;
+        document.getElementsByTagName('h1')[0].innerText = count
+      }
+    </script>
+  </body>
+</html>
